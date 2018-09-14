@@ -1,0 +1,1 @@
+!function(a,b,c){"use strict";var d=c(".nav-left + .tab-content").height();c("ul.nav-left").height(d);var e=c(".nav-right + .tab-content").height();c("ul.nav-right").height(e)}(window,document,jQuery);

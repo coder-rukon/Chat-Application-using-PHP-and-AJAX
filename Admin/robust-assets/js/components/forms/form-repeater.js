@@ -1,0 +1,1 @@
+!function(a,b,c){"use strict";c(".repeater-default").repeater(),c(".file-repeater, .contact-repeater").repeater({show:function(){c(this).slideDown()},hide:function(a){confirm("Are you sure you want to remove this item?")&&c(this).slideUp(a)}})}(window,document,jQuery);

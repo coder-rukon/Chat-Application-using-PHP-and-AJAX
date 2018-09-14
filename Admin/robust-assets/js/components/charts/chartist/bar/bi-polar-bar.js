@@ -1,0 +1,1 @@
+$(window).on("load",function(){var a={labels:["W1","W2","W3","W4","W5","W6","W7","W8","W9","W10"],series:[[1,2,4,10,6,-2,-1,-4,-8,-2]]},b={high:15,low:-15,axisX:{labelInterpolationFnc:function(a,b){return b%2===0?a:null}}};new Chartist.Bar("#bipolar-bar",a,b)});

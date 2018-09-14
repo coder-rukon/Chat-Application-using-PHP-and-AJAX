@@ -1,0 +1,1 @@
+$(document).ready(function(){$(".navbar-fixed").length&&$(".navbar-fixed").sticky()});

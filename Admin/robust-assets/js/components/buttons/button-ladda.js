@@ -1,0 +1,1 @@
+!function(a,b,c){"use strict";Ladda.bind("div:not(.progress-demo) button",{timeout:2e3}),Ladda.bind(".progress-demo button",{callback:function(a){var b=0,c=setInterval(function(){b=Math.min(b+.1*Math.random(),1),a.setProgress(b),1===b&&(a.stop(),clearInterval(c))},200)}})}(window,document,jQuery);

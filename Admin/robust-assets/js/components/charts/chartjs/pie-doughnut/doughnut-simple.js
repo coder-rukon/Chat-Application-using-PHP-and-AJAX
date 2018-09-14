@@ -1,0 +1,1 @@
+$(window).on("load",function(){var a=$("#simple-doughnut-chart"),b={responsive:!0,maintainAspectRatio:!1,responsiveAnimationDuration:500},c={labels:["January","February","March","April","May"],datasets:[{label:"My First dataset",data:[65,35,24,45,85],backgroundColor:["#99B898","#FECEA8","#FF847C","#E84A5F","#2A363B"]}]},d={type:"doughnut",options:b,data:c};new Chart(a,d)});

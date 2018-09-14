@@ -1,0 +1,1 @@
+$(window).on("load",function(){new Chartist.Bar("#stacked-bar",{labels:["Q1","Q2","Q3","Q4"],series:[[8e5,12e5,14e5,13e5],[2e5,4e5,5e5,3e5],[1e5,2e5,4e5,6e5]]},{stackBars:!0,axisY:{labelInterpolationFnc:function(a){return a/1e3+"k"}}}).on("draw",function(a){"bar"===a.type&&a.element.attr({style:"stroke-width: 30px"})})});

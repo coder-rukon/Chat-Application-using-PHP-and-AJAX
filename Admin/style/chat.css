@@ -1,0 +1,341 @@
+.rs_chat_box{
+	background:#fff;
+	padding:30px 0;
+}
+.rs_chat_users{
+	border-right: 1px solid #ccc;
+	padding-right: 10px;
+}
+.rs_chat_users .search_box {
+	padding: 0px 0 10px 0;
+	border-bottom: 1px solid #ccc;
+	margin-bottom: 15px;
+}
+.rs_chat_users .search_box .form-control {
+	background: transparent;
+	border: 1px solid #ccc;
+	border-radius: 0;
+	height: 37px !important;
+}
+.rs_chat_users ul {
+	display: block;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+.rs_chat_users ul li{
+	display: block;
+	overflow: hidden;
+
+}
+.rs_chat_users ul li+li{
+
+}
+.rs_chat_users .single_user {
+	display: block;
+	overflow: hidden;
+	text-decoration: none;
+	cursor: pointer;
+	padding: 8px 12px 8px 0;
+	transition: all .5s;
+}
+#rs_conversations .active,
+input:checked + .single_user {
+	background: #3BAFDA!important;
+}
+
+#rs_conversations .active *,
+input:checked + .single_user *{
+	color: #fff !important;
+}
+#rs_conversations .active .notify{
+	display: none;
+}
+.rs_chat_users .single_user img {
+	float: left;
+	width: 60px;
+	border-radius: 50%;
+	margin-right: 15px;
+}
+.rs_chat_users .single_user div {
+	display: block;
+	overflow: hidden;
+	margin: 0;
+	padding: 0;
+	position:relative;
+}
+
+.rs_chat_users .single_user div .name {
+	display: block;
+	color: #000;
+	font-weight: 300;
+	font-size: 16px;
+	overflow: hidden;
+	margin: 0;
+	padding: 0;
+	line-height: 18px;
+
+}
+.rs_chat_users .single_user div .last_message {
+	display: block;
+	color: #727272;
+	font-weight: 400;
+	font-size: 12px;
+	overflow: hidden;
+	margin: 0;
+	padding: 0;
+	line-height: 18px;
+	margin-top: 5px;
+}
+.rs_chat_users .single_user div .notify {
+		display: block;
+		position: absolute;
+		top: 0;
+		right: 0;
+		margin-top: 10px;
+		width: 22px;
+		height: 22px;
+		text-align: center;
+		background: #DA4453;
+		color: #fff;
+		font-size: 11px;
+		font-weight: 700;
+		border-radius: 50%;
+		line-height: 19px;
+}
+.rs_messanger {
+	height: 80vh;
+	position: relative;
+	margin: 0;
+	padding: 0;
+}
+.rs_messanger ul {
+	margin: 0;
+	padding: 0;
+	display: block;
+	list-style: none;
+	max-height: 75vh;
+	overflow: auto;
+}
+.rs_messanger ul li {
+	margin: 0;
+	padding: 0;
+}
+.rs_messanger .single_message_item {
+	margin: 0;
+	padding: 5px 0;
+	overflow: hidden;
+	display: block;
+	position:relative;
+}
+.rs_messanger .single_message_item .thumbnail {
+	float: left;
+	margin: 0 10px 0 0;
+	padding: 0;
+	border-radius: 50%;
+	width: 40px;
+	display: block;
+	cursor: pointer;
+}
+.rs_clearfix{
+	display: block;
+	float: none;
+	clear: both;
+}
+.rs_messanger .single_message_item .message_text {
+	display: block;
+	background: #3BAFDA;
+	padding: 5px;
+	color: #fff;
+	font-size: 14px;
+	line-height: 20px;
+	font-weight: 400;
+	border-radius: 3px;
+	position: relative;
+	overflow: hidden;
+	margin-right:70px;
+	margin-top: 5px;
+	display: inline-block;
+	max-width: 75%;
+}
+.rs_messanger .single_message_item .message_text:before{}
+.rs_messanger .single_message_item .sender_name {
+	font-weight: 700;
+	font-size: 11px;
+	margin: 0;
+	padding: 0;
+	color: #000;
+	position: absolute;
+	left: 0;
+	background: #fff;
+	display: none;
+	z-index: 1;
+	padding: 5px;
+	top: 0;
+}
+.rs_messanger .reverse .single_message_item .sender_name{
+	left:auto;
+	right:0;
+}
+.rs_messanger .single_message_item .thumbnail:hover + .sender_name{
+	display: block;
+}
+.rs_messanger .reverse .single_message_item{
+	text-align: right;
+}
+.rs_messanger .reverse .single_message_item .thumbnail {
+	float: right;
+	margin-right: 0;
+	margin-left: 10px;
+}
+.rs_messanger .reverse .single_message_item  .message_text{
+	margin-right:0;
+	margin-left:70px;
+}
+.rs_messanger .rs_message_editor {
+	position: absolute;
+}
+.rs_messanger .rs_message_editor {
+	left: 0;
+	right: 0;
+	bottom: 0;
+	overflow: hidden;
+}
+.rs_editor_fw{
+	width: 100% !important;
+}
+.rs_message_editor .form-control {
+	height: 40px !important;
+	border: 1px solid #333;
+	border-radius: 0;
+	width: 100%;
+	float: left;
+}
+.rs_message_editor .form-control.rs_editor_fw {
+	height: 150px !important;
+	margin-bottom: 5px;
+}
+.rs_message_editor .form-control.rs_editor_fw+.btn{
+	float: right;
+}
+.rs_btn, 
+.rs_message_editor .btn {
+	background: #3BAFDA;
+	color: #fff;
+	margin-left: 10px;
+	height: 40px;
+	font-weight: 700;
+	text-transform: uppercase;
+	cursor: pointer !important;
+	border: 0 none !important;
+	display: inline-block;
+	font-size: 15px;
+	line-height: 20px;
+	text-decoration: none;
+}
+.rs_btn:hover{
+	background:#000;
+	color:#fff;
+}
+.rs_title_message {
+	font-size: 18px;
+	margin-top: 10px;
+	font-weight: 600;
+	margin-bottom: 10px;
+	border-top: 1px solid #cccc;
+	padding: 15px 0;
+}
+.new_conv_pagination {
+	overflow: hidden;
+	text-align: center;
+	display: block;
+	padding: 20px 30px;
+}
+.nw_conversion_chat .rs_message_editor{
+	display: none;
+}
+.rs_top_message_notify{}
+.rs_top_message_notify a {
+	position: relative;
+}
+.rs_top_message_notify a i {
+	font-size: 21px;
+	color: #ccc;
+}
+.rs_top_message_notify a .count {
+	display: block;
+	position: absolute;
+	top: 0;
+	right: 0;
+	margin-top: 10px;
+	width: 22px;
+	height: 22px;
+	text-align: center;
+	background: #DA4453;
+	color: #fff;
+	font-size: 11px;
+	font-weight: 700;
+	border-radius: 50%;
+	line-height: 19px;
+}
+.message_box_group{
+	position: relative;
+	display: block;
+	float: left;
+	width: 70%;
+}
+.rs_loading_box {
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 100;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    background: rgba(0,0,0,.2);
+    font-size: 8px;
+    line-height: 51px;
+    display: none;
+}
+.rs_loading_box i{}
+.message_box_group #rs_upload_file {
+    position: absolute;
+    right: 10px;
+    font-size: 22px;
+    top: 3px;
+    cursor: pointer;
+    color: #000;
+    opacity: .3;
+}
+.message_box_group #rs_upload_file:hover{
+	opacity: 1;
+}
+.message_box_group #rs_upload_file i{}
+.single_message_item img.rs_chat_img {
+    display: block;
+    width: auto;
+    height: auto;
+    max-width: 100%;
+    cursor: pointer;
+    box-sizing: border-box;
+    box-shadow: 0 0 5px rgba(0,0,0,.5);
+    cursor: pointer;
+}
+.single_message_item .rs_chat_file {
+    display: block;
+    color: #fff;
+    font-size: 14px;
+    text-align: center;
+    padding: 5px 10px;
+    cursor: pointer;
+    text-decoration: none;
+}
+.single_message_item .rs_chat_file i {
+    display: block;
+    font-size: 24px;
+    margin-bottom: 6px;
+}
+#rs_file_form{
+	display: none;
+	opacity: 0;
+}
