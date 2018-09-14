@@ -9,5 +9,5 @@ Chat Application using PHP &amp; AJAX
       
 <strong>pass:</strong> 123456
 
-http://digitalbd.net/project/chat/admin/
+<a href="http://digitalbd.net/project/chat/admin/" target="blank">http://digitalbd.net/project/chat/admin/</a>
 <img src="http://digitalbd.net/project/chat/admin/chat_files/2018/09/14/5b9c07da9998fScreenshot.png"/>
